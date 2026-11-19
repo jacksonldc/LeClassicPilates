@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jackson Luiz" />
+    <meta name="keyboards" content="LCP, Le Classic Pilates, pilates, atvidade física" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LeClassicPilates</title>
+</head>
+<body>
+    <header>
+        <img src="img/banner.png" alt="Mulher praticando Pilates clássico em um estúdio, com o logotipo e o nome Le Classic Pilates Clássico à esquerda." width="100%" height="">
+    </header>
+
+    <nav> <!-- links -->
+        <a class="a-menu" href="index.html">HOME</a>
+        <a class="a-menu" href="#pag-beneficios">BENEFÍCIOS</a>
+        <a class="a-menu" href="#pag-caracteristicas">CARACTERÍSTICAS</a>
+        <a class="a-menu" href="#pag-estudio">ESTÚDIO</a>
+        <a class="a-menu" href="#">AGENDAMENTOS</a>
+    </nav>
+
+    <section id="pag-agendamentos">
+
+        <!-- titulo principal -->
+        <h1>Agendamentos</h1>
+        <p>Agende uma aula experimental grátis agora mesmo</p>
+
+        <form action="" name="formulario" method="get"> <!-- aqui o action leva o dados cadastrados para o backend, inserindo o nome do arquivo -->
+            <!-- nome --> 
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" placeholder="Nome Completo" autofocus maxlength="50" required>
+
+            <!-- email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Exemplo@gmail.com" required>
+
+            <!-- senha -->
+            <label for="pass">Senha:</label>
+            <input type="password" name="pass" id="pass" placeholder="Senha" maxlength="15" minlength="5">
+
+            <!-- celular -->  
+            <label for="clr">Celular:</label>
+            <input type="tel" name="clr" id="clr" placeholder="(61) 91234-5678" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}">
+
+            <div id="data-hora-aula">
+                <div>
+                    <!-- data -->
+                    <label for="date">Data:</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div>
+                    <!-- horas -->
+                    <label for="time">Hora:</label>
+                    <input type="time" name="time" id="time" required>
+                </div>
+                <div>
+                    <!-- Qtd Aulas -->
+                    <label for="aula">Aulas:</label>
+                    <input type="number" name="aula" id="aula" step="1" min="1" max="5">
+                </div>
+            </div>
+
+            <!-- nivel -->
+            <label for="nivel">Nível:</label>
+            <select name="nivel" id="nivel">
+            <option value="basic">Básico</option>
+            <option value="interm">Intermediário</option>
+            <option value="avanc">Avançado</option>
+            </select>
+
+            <!-- genero -->
+            <fieldset>
+                <legend>Genero</legend>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label> <br>
+
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </fieldset>
+
+            <!-- atividades -->
+            <fieldset>
+                <legend>Atividaddes</legend>
+                <input id="muscu" type="checkbox" name="atividade" value="musculacao">
+                <label for="muscu">Musculação</label> <br>
+
+                <input id="pila" type="checkbox" name="atividade" value="pilates">
+                <label for="pila">Pilates</label> <br>
+
+                <input id="yoga" type="checkbox" name="atividade" value="yoga">
+                <label for="yoga">Yoga</label> <br>
+
+                <input id="corr" type="checkbox" name="atividade" value="corrida">
+                <label for="corr">Corrida</label>
+            </fieldset>
+
+            <!-- mensagem -->
+            <label for="msg">Mensagem:</label>
+            <textarea name="mensagem" id="msg" cols="50" rows="4"></textarea>
+
+            <!-- envio/cancelar-->
+             <div id="botoes">
+            <input type="submit" name="botao-agendar" value="AGENDAR">
+            <input type="reset" name="botao-cancear" value="CANCELAR">
+            </div>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <a href="mailto:jacksonldc007@gmail.com" target="_blank">Jackson Luiz</a> - 2026</p>
+    </footer>
+</body>
+</html>

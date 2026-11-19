@@ -1,0 +1,247 @@
+/* INDEX */
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* configuracoes geral da pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, img {
+    width: 100%;
+    background-color: #003a70;
+}
+
+main, #pag-beneficios, #pag-caracteristicas, #pag-estudio, #pag-agendamentos {
+    padding: 15px 80px 70px;
+}
+
+/* todos os <a> */
+a {
+    font: 1rem "Familjen Grotesk", sans-serif;
+    text-decoration: none;
+}
+
+/* configuracão menu */
+nav {
+    background-color: #003a70;
+    text-align: center;
+    padding: 1rem;
+} 
+
+.a-menu {
+    margin-right: 1rem;
+    font-weight: bold;
+} 
+
+.a-menu:link, .a-menu:visited {
+    color: #ffffff;
+} 
+
+.a-menu:hover, .a-menu:active {
+    color: rgb(169, 169, 169);
+}
+
+/* titulo principal */
+h1 {
+    font: 3.6rem "Familjen Grotesk", serif;
+    text-align: center;
+    color: #c8b79d;
+    margin-bottom: 3rem;
+}
+
+/* todos os <p> */
+p {
+    font: 1.2rem Arial, Helvetica, sans-serif;
+    color: #1d1c1c;
+    text-align: justify;
+    margin: 1rem;
+}
+
+
+/* todos os <h2> */
+h2 {
+    font: 2.5rem "Familjen Grotesk", serif;
+    color: #c8b79d;
+    margin-bottom: 3rem;
+}
+
+/* pagina beneficios */
+#pag-beneficios {
+    background-color: #101820;
+}
+
+#pag-beneficios p {
+    color: #ffffff;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    margin-bottom: 1%;
+}
+
+li {
+    color: #ffffff;
+    font: 1.2rem Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+/* pagina caracteristicas */
+#pag-caracteristicas {
+    background-color: #e9e7df;
+}
+
+.card {
+    width: 24%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #CCC;
+}
+
+.card p {
+    text-align: center;
+}
+
+h3 {
+    font-family: "Familjen Grotesk", serif;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #003a70;
+}
+
+.card img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.text-card {
+    padding: 1rem;
+}
+
+
+/* pagina Nosso Estudio */
+
+.docker {
+    display: flex;
+    gap: 30px;
+}
+
+
+#texto-contato {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#texto-contato img {
+    margin-top: 2rem;
+    width: 30px;
+    background-color:#ffffff;
+}
+
+
+video {
+    width: 100%;
+}
+
+
+/* Rodape */
+footer {
+    background-color: #1d1c1c;    
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    font: inherit;
+}
+
+
+/* PAGINA AGENDAMENTOS */
+#pag-agendamentos p {
+    text-align: center;
+}
+
+#pag-agendamentos form {
+    background-color: #ffffff;
+    width: 450px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #CCC;
+} 
+
+label, 
+input,
+textarea {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+fieldset {
+    border: 1px solid #c1c1c1;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+legend {
+    margin-left: 1rem;
+}
+
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    padding: 0.4rem;
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#data-hora-aula {
+    display: flex;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+#botoes {
+    display: flex;
+}
+
+input[type="submit"], input[type="reset"] {
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: #003a70;
+    color: aliceblue;
+    border: 1;
+}
+
+input[type="reset"] {
+    background-color: #ffffff;
+    color: #1d1c1c;
+}
+
